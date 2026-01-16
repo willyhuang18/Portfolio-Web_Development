@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pangta's - Week 1 assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#about">ABOUT ME</a> | 
+        <a href="#seo">SEO STUDY</a> | 
+        <a href="#grid">3x3 GRID</a> | 
+        <a href="#css">CSS</a>
+    </nav>
+
+    <header>
+        <h1>Pangta Huang: From Behavioral Science to CS</h1>
+        <p>Hi! I am currently an MSCS student at <strong>Northeastern University</strong>. With my previous background in <strong>Behavioral Science</strong>, I am fascinated by how users interact with technology. This page is my first step in mastering the foundations of web structure.</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>1. My Learning Goals</h2>
+            <p>At NEU, I am diving into <strong>Algorithms and OOD</strong>, but I believe a great Software Engineer also needs to understand the user's interface. My goal is to bridge the gap between human behavior and clean code.</p>
+        </section>
+
+        <section id="seo">
+            <h2>2. Important SEO Header Tags</h2>
+            <p>SEO (Search Engine Optimization) is critical for accessibility. Here is what I learned from the readings:</p>
+            <ul>
+                <li>&lt;title&gt;: The primary identity of the page for search engine crawlers.</li>
+                <li>&lt;h1&gt; to &lt;h6&gt;: Essential for content hierarchy and screen readers.</li>
+                <li>&lt;meta name="description"&gt;: The "first impression" text in search results.</li>
+                <li>&lt;link rel="canonical"&gt;: Prevents confusion by pointing to the "master" version of a page.</li>
+            </ul>
+        </section>
+
+        <section id="grid">
+            <h2>3. The 3x3 Grid Challenge (No CSS!)</h2>
+            <p>This grid was built using only raw <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags without any CSS positioning. It tests my understanding of how block-level elements stack by default.</p>
+            <div>
+                <div><span>[1,1]</span> <span>[1,2]</span> <span>[1,3]</span></div>
+                <div><span>[2,1]</span> <span>[2,2]</span> <span>[2,3]</span></div>
+                <div><span>[3,1]</span> <span>[3,2]</span> <span>[3,3]</span></div>
+            </div>
+        </section>
+
+        <section id="css">
+            <h2>4. CSS Box Model Gallery</h2>
+            
+            <p>Visualizing how <strong>Margin, Border, and Padding</strong> interact.</p>
+            <div class="gallery">
+                <div class="box box-small">0px Style</div>
+                <div class="box box-med">5px Style</div>
+                <div class="box box-large">10px Style</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Font Size Comparison & Usage</h2>
+            <p>As a Behavioral Science major, I know readability is key. Here is when I would use each unit:</p>
+            <ul>
+                <li style="font-size: 12px;"><strong>12px (Absolute):</strong> Best for copyright or legal disclaimers that must stay small.</li>
+                <li style="font-size: 20px;"><strong>20px (Absolute):</strong> Useful for fixed-width sidebars where design shouldn't shift.</li>
+                <li style="font-size: 1.1em;"><strong>1.1em (Relative):</strong> Perfect for standard body text that should scale with its parent.</li>
+                <li style="font-size: 2rem;"><strong>2rem (Relative):</strong> My choice for main headers to ensure they scale with root settings.</li>
+                <li style="font-size: 140%;"><strong>140% (Relative):</strong> Great for blockquotes or emphasized notes.</li>
+                <li style="font-size: 4vw;"><strong>4vw (Relative):</strong> Ideal for hero banners that need to look big on all screen widths.</li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: 150px;">
+            <h2>6. Positioning Creative Section</h2>
+            <div class="pos-container">
+                <div class="rel-box">
+                    Relative: Used to "anchor" children.
+                    <div class="abs-box">Absolute: For overlays.</div>
+                </div>
+            </div>
+            <p><strong>When to use:</strong></p>
+            <ul>
+                <li><strong>Static:</strong> For normal document flow (like this text).</li>
+                <li><strong>Relative:</strong> When I need to nudge an element without affecting others.</li>
+                <li><strong>Absolute:</strong> For notification badges or icons on top of images.</li>
+                <li><strong>Fixed:</strong> For "Back to Top" buttons or navigation that stays during scroll.</li>
+            </ul>
+            <div class="fixed-bubble">Fixed: Always Here</div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p><strong>10 Essential Tags:</strong> div, span, p, a, h1, img, ul, li, nav, footer</p>
+        <p>Pangta Huang | Northeastern University | willyhuang18@gmail.com </p>
+    </footer>
+
+</body>
+</html>
